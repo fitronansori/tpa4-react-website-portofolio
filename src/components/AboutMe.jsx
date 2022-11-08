@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/aboutme.css";
-import Profile from "../assets/profile.png";
+import bg2 from "../assets/bg2.png";
 import { FaCss3Alt, FaHtml5, FaReact, FaBootstrap } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiRedux, SiTailwindcss } from "react-icons/si";
@@ -8,10 +8,10 @@ import { SiRedux, SiTailwindcss } from "react-icons/si";
 const AboutMe = () => {
   return (
     <>
-      <div className="container mt-5" id="aboutme">
+      <div className="container my-5" id="aboutme">
         <div className="row about-content">
           <div className="col-md-5 text-white d-flex flex-column justify-content-center">
-            <img src={Profile} alt="" className="img-fluid h-100 w-100" />
+            <img src={bg2} alt="" className="img-fluid h-100 w-100" />
           </div>
           <div className="col-md-7 d-flex flex-column justify-content-center">
             <div className="info-wrapper">

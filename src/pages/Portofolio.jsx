@@ -1,11 +1,14 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import PortofolioList from "../components/PortofolioList";
+import Footer from "../components/Footer";
 
 const Portofolio = () => {
   return (
     <div>
       <Navbar />
-      <h1>Portofolio</h1>
+      <PortofolioList />
+      <Footer />
     </div>
   );
 };

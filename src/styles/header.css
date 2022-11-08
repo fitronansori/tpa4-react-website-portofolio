@@ -2,7 +2,7 @@
 
 .button {
   background: var(--color-primary);
-  padding: 16px;
+  padding: 12px;
   border-radius: 4px;
   color: var(--text-white);
   text-decoration: none;
@@ -10,9 +10,26 @@
 }
 
 .button:hover {
-  padding: 16px;
+  padding: 12px;
   border-radius: 4px;
   color: var(--text-white);
   text-decoration: none;
   opacity: 0.8;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-icon {
+  font-size: 2rem;
+  color: var(--color-text);
+  transition: all 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  color: var(--color-primary);
 }
