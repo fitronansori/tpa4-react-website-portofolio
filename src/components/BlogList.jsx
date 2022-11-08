@@ -1,31 +1,29 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 
-const PortofolioList = () => {
-  const [portofolio, setPortofolio] = useState([]);
+const BlogList = () => {
+  const [blog, setBlog] = useState([]);
   const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     axios
       .get("https://634ce2e2f5d2cc648e96b729.mockapi.io/Blog")
       .then((res) => {
-        setPortofolio(res.data);
+        setBlog(res.data);
         setLoading(false);
       })
       .catch((err) => {
         console.log(err);
       });
-  }, []);
-
+  });
   return (
     <>
-      <h1 className="title my-3 text-center">Portofolio</h1>
+      <h1 className="title my-3 text-center">Blog</h1>
       <div className="container">
         <div className="row">
           {loading ? (
             <h3 className="text-center">Loading...</h3>
           ) : (
-            portofolio.map((item) => {
+            blog.map((item) => {
               return (
                 <div className="col-md-4 mb-3" key={item.id}>
                   <div className="card">
@@ -48,4 +46,4 @@ const PortofolioList = () => {
   );
 };
 
-export default PortofolioList;
+export default BlogList;
