@@ -1,0 +1,18 @@
+@import "./base.css";
+
+.button {
+  background: var(--color-primary);
+  padding: 16px;
+  border-radius: 4px;
+  color: var(--text-white);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  padding: 16px;
+  border-radius: 4px;
+  color: var(--text-white);
+  text-decoration: none;
+  opacity: 0.8;
+}

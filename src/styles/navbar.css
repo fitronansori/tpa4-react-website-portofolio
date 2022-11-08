@@ -1,0 +1,22 @@
+@import "./base.css";
+
+#nav-container {
+  background-color: var(--color-bg);
+}
+
+.item-link {
+  color: var(--color-text);
+}
+
+.item-link:hover {
+  color: var(--color-primary);
+}
+
+.container .logo {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.container .logo:hover {
+  color: var(--color-primary);
+}

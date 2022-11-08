@@ -1,0 +1,18 @@
+@import "./base.css";
+
+.icon-stack {
+  /* background-color: var(--primary-color); */
+  color: var(--color-primary);
+  font-size: 3rem;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.stack-item .icon-stack {
+  font-size: 3rem;
+  margin: 1rem;
+}
