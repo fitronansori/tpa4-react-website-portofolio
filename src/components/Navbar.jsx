@@ -7,7 +7,9 @@ const Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg py-3" id="nav-container">
         <div className="container">
-          <span className="navbar-brand logo fs-3">Fitron Ansori</span>
+          <Link to={"/"} style={{ textDecoration: "none" }}>
+            <span className="navbar-brand logo fs-3">Fitron Ansori</span>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"

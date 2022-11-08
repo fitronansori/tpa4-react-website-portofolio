@@ -1,4 +1,5 @@
 import axios from "axios";
+import "../styles/portolist.css";
 import React, { useEffect, useState } from "react";
 
 const PortofolioList = () => {
@@ -7,7 +8,7 @@ const PortofolioList = () => {
 
   useEffect(() => {
     axios
-      .get("https://634ce2e2f5d2cc648e96b729.mockapi.io/Blog")
+      .get("https://634ce2e2f5d2cc648e96b729.mockapi.io/Portofolio")
       .then((res) => {
         setPortofolio(res.data);
         setLoading(false);
@@ -29,11 +30,15 @@ const PortofolioList = () => {
               return (
                 <div className="col-md-4 mb-3" key={item.id}>
                   <div className="card">
-                    <img src={item.image} className="card-img-top" alt="..." />
+                    <img
+                      src={item.image}
+                      className="card-img-top img-fluid"
+                      alt="..."
+                      style={{ height: "200px" }}
+                    />
                     <div className="card-body">
-                      <h5 className="card-title">{item.title}</h5>
-                      <p className="card-text">{item.description}</p>
-                      <a href="#" className="btn btn-primary">
+                      <h5 className="card-title mb-3">{item.title}</h5>
+                      <a href={item.link} className="button-porto">
                         Go To Link
                       </a>
                     </div>

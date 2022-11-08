@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import "../styles/bloglist.css";
 
 const BlogList = () => {
   const [blog, setBlog] = useState([]);
@@ -27,12 +28,17 @@ const BlogList = () => {
               return (
                 <div className="col-md-4 mb-3" key={item.id}>
                   <div className="card">
-                    <img src={item.image} className="card-img-top" alt="..." />
+                    <img
+                      src={item.image}
+                      className="card-img-top img-fluid"
+                      alt="..."
+                      style={{ height: "200px" }}
+                    />
                     <div className="card-body">
                       <h5 className="card-title">{item.title}</h5>
-                      <p className="card-text">{item.description}</p>
-                      <a href="#" className="btn btn-primary">
-                        Go To Link
+                      <p className="card-text">{item.post}</p>
+                      <a href={item.link} className="btn-blog" target="_blank">
+                        Read More
                       </a>
                     </div>
                   </div>
